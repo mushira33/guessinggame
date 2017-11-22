@@ -22,7 +22,7 @@ local actual=$2
 
 # Count the number of files
 dircount=`ls -l | grep '^-' | cut -d' ' -f13 | wc -l`
-inputguess=0
+inputguess=-1
 
 # While Loop to check until the guess is right
 while [ $inputguess -ne $dircount ]
